@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="个人主页 - 全栈开发者">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <span class="logo">Portfolio</span>
+      <ul class="nav-links">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">MENU</button>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="avatar-frame" id="avatarFrame">
+        <div class="avatar-img" id="avatarImg">
+          <span class="avatar-placeholder">点击上传头像</span>
+        </div>
+        <input type="file" id="avatarInput" accept="image/*" hidden>
+      </div>
+      <h1 class="hero-name">你好，我是 <span class="highlight">钟佳颖</span></h1>
+      <p class="hero-desc">这是我的云南之旅</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">查看项目</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于我的云南之旅</h2>
+                  <div class="about-grid" id="aboutGrid">
+        <div class="about-card" data-city="昆明">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder" data-city="昆明">
+              <span>📷 添加照片</span>
+            </div>
+            <input type="file" accept="image/*" hidden class="city-photo-input" data-city="昆明">
+          </div>
+          <div class="about-icon">🏔️</div>
+          <h3>昆明</h3>
+          <p>春城花都，四季如春。滇池湖畔，感受自然与悠闲。</p>
+        </div>
+        <div class="about-card" data-city="丽江">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder" data-city="丽江">
+              <span>📷 添加照片</span>
+            </div>
+            <input type="file" accept="image/*" hidden class="city-photo-input" data-city="丽江">
+          </div>
+          <div class="about-icon">🏘️</div>
+          <h3>丽江</h3>
+          <p>古城流水，雪山映照。纳西文化，茶马古道上的明珠。</p>
+        </div>
+        <div class="about-card" data-city="大理">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder" data-city="大理">
+              <span>📷 添加照片</span>
+            </div>
+            <input type="file" accept="image/*" hidden class="city-photo-input" data-city="大理">
+          </div>
+          <div class="about-icon">🌊</div>
+          <h3>大理</h3>
+          <p>苍山洱海，风花雪月。白族人家，诗意栖居的地方。</p>
+        </div>
+        <div class="about-card" data-city="香格里拉">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder" data-city="香格里拉">
+              <span>📷 添加照片</span>
+            </div>
+            <input type="file" accept="image/*" hidden class="city-photo-input" data-city="香格里拉">
+          </div>
+          <div class="about-icon">⛰️</div>
+          <h3>香格里拉</h3>
+          <p>人间天堂，藏地秘境。雪山草原，心灵栖息的家园。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact-content">
+        <p class="contact-text">欢迎随时交流，无论是技术探讨还是合作机会。</p>
+        <div class="contact-links">
+                    <a href="tel:19721891180" class="contact-item">
+            <span class="contact-icon">📞</span>
+            19721891180
+          </a>
+          <a href="mailto:hello@example.com" class="contact-item">
+            <span class="contact-icon">&#9993;</span>
+            hello@example.com</a>
+          <a href="https://github.com" target="_blank" class="contact-item">
+            <span class="contact-icon">&#128187;</span>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-item">
+            <span class="contact-icon">&#128101;</span>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 · 用心构建</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
